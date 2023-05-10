@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+@font-face{
+    font-family: 'miFuente';
+    src: url("TT Alientz Trial Grotesque.ttf");
+}
+
+#fuente-personalizada{
+    font-family: "miFuente";
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 280px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1{
+    color: firebrick;
+}
+
+.menu{
+    height: 80px;
+}
+
+.menu nav ul{
+ height: 100%;
+ display: flex;
+ list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 30px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before{
+content: "";
+width: 100%;
+height: 4px;
+background: darkred;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.menu nav ul li a{
+    color: black;
+    transition: 300ms;
+}
+
+.menu nav ul li a:hover
+{
+    color: darkred;
+}
+
+.menu .text-menu-selected{
+    color: darkred;
+}
+
+.container-cover{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 80px;
+    background-image: url(../Imagenes/img13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(117, 49, 173, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-cover-info{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-cover-info{
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: px;
+}
+
+.container-cover-info{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/*container contenido articulo*/
+.container-content{
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px aquamarine;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+article:before{
+content: "";
+width: 100%;
+height: 6px;
+position: absolute;
+top: 0;
+left: 0;
+background: darkblue;
+}
+article h1{
+    margin-top: 1%;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #3c3c3c;
+}
+
+article img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Aso articulos relacionados*/
+.container-aside aside{
+  width: 320px;
+  border-right: 6px;
+  box-shadow: 0 0 20px -20px black;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.container-aside aside img{
+    width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 20px;
+    background: crimson;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+container-aside aside button:hover{
+opacity: 1.0;
+}
+
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #f2f2f2;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+ max-width: 1200px;
+ margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+    width: 100px;
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+.container-footer footer .redes-footer .fa-facebook-f:hover{
+    background: #41579a;
+    color: #fff;
+}
+
+.container-footer footer .redes-footer .fa-google-plus-g:hover{
+background: #df4c34;
+color: #fff;
+}
+
+.container-footer footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #fcde30, #e9712a, #d23138, #ae4198, #754da1, #5443a8);
+    color: #fff;
+}
+
+.container-footer hr{
+   margin-top: 20px;
+   border: none;
+   height: 2px;
+   background: #a8a8a87a;
+}
+
+.container-footer h4{
+text-align: center;
+margin-top: 40px;
+color: black;
+font-weight: 500px;
+}
